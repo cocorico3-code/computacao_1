@@ -1,16 +1,13 @@
-//declaraçao de variaveis e seus tipos
-
-var nome : texto
-var ano_nascimento : inteiro
-var salario : real
-var usa_oculos : logico
-const ano = 2026
-var idade : inteiro
+// declaraçao de variaveis e seus tipos
+var nome: texto
+var ano_nascimento: inteiro
+var salario: real
+var usa_oculos: logico
+constante ano = 2026
+var idade: inteiro
 var resposta = texto
-
-//atribuiçao de valores
-
-para(var i=1; i<=3; i=i+1){
+// atribuiçao de valores
+para var i = 1; i <= 3; i = i + 1 {
     nome = leia("digite seu nome: ")
     ano_nascimento = inteiro(leia("digite o ano de nascimento, com 4 digitos: "))
     salario = real(leia("digite seu salario: "))
@@ -22,9 +19,7 @@ para(var i=1; i<=3; i=i+1){
     }
     se (usa_oculos) {
         escreva("${i} - ${nome} tem ${idade} anos, ganha ${salario} e usa oculos.")
-    } 
-    senao {
+    } senão {
         escreva("${i} - ${nome} tem ${idade} anos, ganha ${salario} e nao usa oculos.")
-    }       
+    }
 }
-
