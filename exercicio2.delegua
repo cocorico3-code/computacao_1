@@ -1,0 +1,30 @@
+//declaraçao de variaveis e seus tipos
+
+var nome : texto
+var ano_nascimento : inteiro
+var salario : real
+var usa_oculos : logico
+const ano = 2026
+var idade : inteiro
+var resposta = texto
+
+//atribuiçao de valores
+
+para(var i=1; i<=3; i=i+1){
+    nome = leia("digite seu nome: ")
+    ano_nascimento = inteiro(leia("digite o ano de nascimento, com 4 digitos: "))
+    salario = real(leia("digite seu salario: "))
+    idade = (ano - ano_nascimento)
+    usa_oculos = falso
+    resposta = leia("voce usa oculos? V ou F")
+    se (resposta == "V") {
+        usa_oculos = verdadeiro
+    }
+    se (usa_oculos) {
+        escreva("${i} - ${nome} tem ${idade} anos, ganha ${salario} e usa oculos.")
+    } 
+    senao {
+        escreva("${i} - ${nome} tem ${idade} anos, ganha ${salario} e nao usa oculos.")
+    }       
+}
+
