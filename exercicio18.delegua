@@ -1,0 +1,36 @@
+//recebe e valida a quantidade de alunos
+
+var qtd_alunos = 0
+enquanto(qtd_alunos <= 0) {
+    qtd_alunos = inteiro(leia("digite a quantidade de alunos (maior que 0): "))
+}
+//prepara os vetores e a variavel de soma
+
+var nomes = []
+var medias = []
+var soma_turma = 0.0
+//recebe os dados de cada aluno
+
+para (var i = 0; i < qtd_alunos; i = i+ 1) {
+    var nome_aluno = leia("digite o nome  do aluno: ")
+    var media_aluno = real(leia("digite a media de " + nome_aluno + ": "))
+
+    nomes[i] = nome_aluno
+    medias[i] = media_aluno
+    soma_turma = soma_turma + media_aluno
+}
+//calculo da media geral e dos 90%
+
+var media_turma = soma_turma / qtd_alunos
+var limite_90 = media_turma * 0.9
+
+escreva("media da turma: " + texto(media_turma))
+escreva("90% da media: " + texto(limite_90))
+escreva("alunos com nota superior a 90% da media:")
+//verifica quem fica acima da media
+
+para (var i = 0; i < qtd_alunos; i = i + 1) {
+se (medias[i] > limite_90) {
+    escreva("- " + nomes[i])
+    }
+}
