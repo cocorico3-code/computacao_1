@@ -13,7 +13,7 @@ var soma_turma = 0.0
 
 para (var i = 0; i < qtd_alunos; i = i+ 1) {
     var nome_aluno = leia("digite o nome  do aluno: ")
-    var media_aluno = real(leia("digite a media de " + nome_aluno + ": "))
+    var media_aluno = real(leia("digite a media do aluno: "))
 
     nomes[i] = nome_aluno
     medias[i] = media_aluno
